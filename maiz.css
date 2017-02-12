@@ -1,0 +1,184 @@
+*{margin: 0px;padding: 0px;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;}
+#One{width:1060px;height: 65px;margin: 0 auto;}
+#One1{width: 230px;height: 65px;float: left; }
+#One1 img{margin-top: 5px;}
+#One2{width: 445px;height:65px;float: left;}
+#One2 p{font-size: 12px;padding-top: 10px;}
+#One2 p a{color: #999;}
+#One2 p a:hover{color: brown;}
+#One3{float: right;width: 380px;height: 65px;}
+#One3 #ort{width: auto;height: 30px; margin-right: 5px;}
+#One3 #ort #orl{float: left; height: 30px;margin-right: 30px;}
+#One3 #ort #orl ul li{display: inline-block;}
+#One3 #ort #orl ul li a{color: #999999;line-height: 30px; font-weight: bold;font-size:14px;}
+#One3 #ort #orl ul li a:hover{color:coral;}
+#One3 #orb{width: auto;height: 50px;}
+
+#Two{width: 1060px;height: 68px;margin: 0 auto;margin-top: 5px;background: url("images/spring_1200.gif")no-repeat;text-align: center;}
+#Two #twt{width: 1060px;height: 32px;}
+#Two #twt ul li{display: inline-block;margin-left: 15px;}
+#Two #twt ul li a{color: white; font-size: 18px;font-weight: bold;line-height: 34px;}
+#Two #twb #twbl{float: left;}
+#Two #twb #twbc{float: left;}
+#Two #twb #twbc a{color: white;font-size: 14px; margin-left: 15px;}
+#Two #twb #twbr{float: right; position: relative;}
+
+#Tre{width: 1060px;height:auto;margin: 0 auto;margin-top: 5px; }
+#Tre #TreL{width: 211px;height: auto;border-top:none;float: left;}
+#Tre #TreL #TreL1,#TreL2,.fenlei{width: 211px;height:auto;}
+#Tre #TreL #TreL1 #TreL1t,#TreL2t,#TreL3ct,#TreL3ft,.fenleit{background: url("images/spring_06.jpg");text-align: center;height: 28px}
+#Tre #TreL #TreL1 #TreL1t h3,#TreL2t h3,#TreL3ct h3,#TreL3ft h3,.fenlei h3{color: white;font-size: 18px;line-height: 28px;}
+#Tre #TreL #TreL1 #TreL1b{height: auto; border: 2px solid red; border-top: none;}
+#Tre #TreL #TreL1 #TreL1b p{margin-left: 15px;height: 24px;line-height: 24px;}
+#Tre #TreL #TreL1 #TreL1b p a{margin-left: 5px;color: #333;}
+#Tre #TreL #TreL1 #TreL1b p a:hover{color: brown;}
+#Tre #TreL #TreL2{width: 211px;height:auto;margin-top: 5px;border-top: none;}
+#Tre #TreL #TreL2b{border: 2px solid red;}
+#Tre #TreL #TreL2 img{margin-left: 15px;}
+#Tre #TreL #TreL2 span{color: red;font-weight: bold;margin-left: 5px;line-height: 30px;}
+#Tre #TreL #TreL2 ul li ul li{line-height: 34px;}
+#Tre #TreL #TreL2 ul li ul li a{color: #666666; margin:10px 10px; text-align: center}
+#Tre #TreL #TreL2 ul li ul li a:hover{color: coral;}
+#Tre #TreL #TreL2 p,#TreL3cb p{text-align: right;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;}
+#Tre #TreL #TreL2 p a,#TreL3cb p a{color: #999999;font-size: 14px;}
+#Tre #TreL #TreL2 p a:hover,#TreL3cb p a:hover{color: red;}
+#Tre #TreL #TreL3{width: 211px;height: auto;}
+#Tre #TreL #TreL3 #TreL3c{width: 211px;height: auto;border-top:none;}
+#Tre #TreL #TreL3 #TreL3cb{border: solid 2px red;}
+#Tre #TreL #TreL3 #TreL3c #TreL3cb img{border: 1px solid black;margin:3px 5px;}
+#Tre #TreL #TreL3 #TreL3f #TreL3fb{border: solid 2px red;height: auto}
+#Tre #TreL #TreL3 #TreL3f #TreL3fb p{text-align: center;line-height: 26px;}
+#Tre #TreL #TreL3 #TreL3f #TreL3fb p a{color: #666}
+
+#Tre #TreC{width: 580px;height: auto;float: left;margin-left: 28px;}
+
+#Tre #TreC1{position: relative;  width: 580px;height: 160px;margin: 0 auto;}
+#Tre #TreC1 ul li{position:absolute;  }
+#Tre #TreC1 ul li img{width:580px;height: 160px;}
+#Tre #TreC1 ul .TopImg{z-index: 1;}
+#Tre #TreC1 dl{position: absolute;right: 10; bottom: 0; z-index: 2;text-align: center;}
+#Tre #TreC1 dl dt{ float: left; width: 20px;height: 20px;text-align: center;line-height: 20px;color: deepskyblue;  border: 1px solid royalblue;  margin-left: 5px;  cursor: pointer;  border-radius: 50%;  }
+#Tre #TreC1 dl .on{ color: orangered;  background: lightgreen;}
+#Tre #TreC2 #TreC2t,#TreC3t,#TreC4t,#TreC5t{width: 580px;height: 31px;background: url("images/ca_1.gif")no-repeat;margin-top: 6px;}
+#Tre #TreC2 #TreC2t h4,#TreC3t h4,#TreC4t h4,#TreC5t h4{line-height: 31px;color: white;font-size: 14px;margin-left: 15px;float: left;}
+#Tre #TreC2 #TreC2t a,#TreC3t a,#TreC4t a,#TreC5t a{float: right;font-size: 8px;color: red;line-height: 31px;margin-right: 7px;}
+#Tre #TreC2 ul li,#TreC3 ul li,#TreC4 ul li,#TreC5 ul li{display: inline-block;width: 102px;height: auto;text-align: center;margin-left: 7px;}
+#Tre #TreC2 ul li p a,#TreC3 ul li p a,#TreC4 ul li p a,#TreC5 ul li p a{font-size: 7px;line-height: 20px;color: #666666;}
+#Tre #TreC2 ul li p a:hover,#TreC3 ul li p a:hover,#TreC4 ul li p a:hover,#TreC5 ul li p a:hover{color: darkred;}
+#Tre #TreC2 ul li h4,#TreC3 ul li h4,#TreC4 ul li h4,#TreC5 ul li h4{font-size: 15px;font-weight: bold;color: red;line-height: 20px;}
+#Tre #TreC6{width: 580px;height: auto;}
+#Tre #TreC6 p{font-size: 12px;margin-top: 10px;margin-left: 5px;}
+#Tre #TreC6 img{margin-left: 10px;margin-top: 10px;}
+
+#Tre #TreR{width: 211px;height: 990px;float: right;}
+#Tre #TreR #TreR1{width: 211px;height:auto;margin-bottom: 5px;}
+#Tre #TreR #TreR1t,#TreR2t,#TreR3t{width: 211px;height: 28px;background: url("images/spring_06.jpg")}
+#Tre #TreR #TreR1t h3,#TreR2t h3,#TreR3t h3{color: white;text-align: center;line-height: 28px;font-size: 18px;}
+#Tre #TreR #TreR1b,#TreR2b,#TreR3b{width: 207px;height: auto;border: 2px solid red;border-top: none;padding-top: 10px;}
+
+#Tre #TreR #TreR1b ul li{width: 207px;margin-left: 8px;height: 24px;line-height: 24px;margin-bottom: 10px;}
+#Tre #TreR #TreR1b ul li a{color: #666666;margin-left: 15px;line-height: 24px;height: 24px;display: block;margin-top: -22px;}
+#Tre #TreR #TreR1b ul li a:hover{color: darkred;}
+#Tre #TreR #TreR2b p{font-size: 14px;line-height: 24px;margin-left: 15px;}
+#Tre #TreR #TreR2b #TreR2bf{width: 208px;height: auto;padding-top: 15px;padding-bottom: 20px;}
+#Tre #TreR #TreR2b #TreR2bf a{color: #333;margin-left: 10px;line-height: 24px;font-size: 14px;}
+#Tre #TreR #TreR2b #TreR2bf a img{margin-right: 5px;}
+#Tre #TreR #TreR3b .TreR31{width: 207px;height: 150px;border-bottom: dotted 1px rgb(211,211,211);}
+#Tre #TreR #TreR3b .TreR3l{float: left;width: 100px;height: 150px;}
+#Tre #TreR #TreR3b .TreR3l img{margin-top: 20px;}
+#Tre #TreR #TreR3b .TreR3r{float: right;width: 100px;margin-top: 15px;margin-right: 5px;}
+#Tre #TreR #TreR3b .TreR3r p{font-size: 12px;color: #666;text-align: center;line-height: 18px;}
+#Tre #TreR #TreR3b .TreR3r p a{color: #666;text-align: center;}
+#Tre #TreR #TreR3b .TreR3r h4{color:red;font-weight: bold; margin-top: 5px;}
+
+#For{clear: both;width: 1060px;height: 200px;border: 2px solid red;margin:20px auto;}
+#For .For{width: 150px;height: 180px;float: left;margin-left: 35px;margin-top: 10px;}
+#For .For p{text-align: center; color: red;font-weight: bold; font-size: 18px;margin-top: 5px;}
+#For .For ul li{line-height: 20px;text-align: center;margin-top: 10px;height: 20px;}
+#For .For ul li a{font-size: 14px;font-weight: bold;color: black;}
+#For .For ul li img{margin-right: 5px;margin-top: 15px;}
+#Fiv{width: 1060px;height: 80px;margin: 0 auto;}
+#Fiv p{font-size: 14px; line-height: 24px;text-align: center;}
+
+/*  注册部分  */
+#zhuce{width: 840px;height:500px;float: right;}
+#zhuce #zhucet{height: 26px;background:url("images/sortbg.jpg");line-height: 26px;font-size: 14px;}
+#zhuce #zhucet img{margin-left: 10px;margin-right: 5px;}
+#zhuce #zhucet a{font-size: 14px;}
+#zhuce #zhuceb{width: 400px;height: auto;margin: 80px auto;}
+#zhuce #zhuceb table tr .td{text-align: right;font-size: 12px;}
+
+/*  产品列表部分  */
+#Tre #liebiao{width: 840px;height:auto;float: right;}
+#Tre #liebiao #liebiaot{margin-bottom: 10px;}
+#Tre #liebiao #liebiaot #liebiaot1{height: 26px;background:url("images/sortbg.jpg");line-height: 26px;font-size: 14px;}
+#Tre #liebiao #liebiaot #liebiaot1 img{margin-left: 10px;margin-right: 5px;}
+#Tre #liebiao #liebiaot #liebiaot1 a{font-size: 14px;}
+#Tre #liebiao #liebiaot #liebiaot2 li{display: inline-block;margin-left: 5px;margin-top: 10px;}
+#Tre #liebiao #liebiaot #liebiaot2 a{font-size: 14px;text-decoration: solid;color: #999999;border-bottom: 1px solid #999999;}
+#Tre #liebiao #liebiaot #liebiaot2 ul span{font-size: 15px;font-weight: bold;margin-left: 10px;}
+#Tre #liebiao #liebiaob{width: 840px;height: auto;border: 1px solid #999999;}
+#Tre #liebiao #liebiaob #liebiaob1{background:rgb(240,240,240);height: 35px;}
+#Tre #liebiao #liebiaob #liebiaob1 li{display: inline-block;line-height: 35px;height: 35px;width: 60px;text-align: center;}
+#Tre #liebiao #liebiaob #liebiaob1 li a{font-size: 14px;color: #999999;display: block;}
+#Tre #liebiao #liebiaob #liebiaob1 li a:hover{background: rgb(255,233,158);}
+#Tre #liebiao #liebiaob #liebiaob1 .pai{font-weight: bold;margin-left: 10px;}
+#Tre #liebiao #liebiaob #liebiaob1 .pic{text-align: right;float: right;font-size: 16px;font-weight: bold;line-height: 35px;}
+#Tre #liebiao #liebiaob #liebiaob1 .pic img{margin-right: 15px;margin-top: 8px;}
+
+
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_1{width: 840px;height: 140px;border-bottom: 1px solid rgb(240,240,240);}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_1 #liebiaob2_1l{width: 100px;height:100px;border: 1px solid #999999;float: left;margin: 20px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_1 #liebiaob2_1r{width: 600px;height: 100px;float: left;margin-bottom: 20px;padding-top: 15px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_1 #liebiaob2_1r p{margin-left: 15px;line-height: 24px;font-size: 14px;color: #666;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_1 #liebiaob2_1r a{color: #666;font-size: 14px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_1 #liebiaob2_1r .jia{float: right;margin-top: 15px;margin-right: 25px;}
+
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_2{width: 840px;height: 140px;border-bottom: 1px solid rgb(240,240,240);clear: both;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_2 #liebiaob2_2l{width: 100px;height:100px;border: 1px solid #999999;float: left;margin: 20px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_2 #liebiaob2_2r{width: 600px;height: 100px;float: left;margin-bottom: 20px;padding-top: 15px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_2 #liebiaob2_2r p{margin-left: 15px;line-height: 24px;font-size: 14px;color: #666;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_2 #liebiaob2_2r a{color: #666;font-size: 14px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_2 #liebiaob2_2r .jia{float: right;margin-top: 15px;margin-right: 25px;}
+
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_3{width: 840px;height: 140px;border-bottom: 1px solid rgb(240,240,240);clear: both;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_3 #liebiaob2_3l{width: 100px;height:100px;border: 1px solid #999999;float: left;margin: 20px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_3 #liebiaob2_3r{width: 600px;height: 100px;float: left;margin-bottom: 20px;padding-top: 15px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_3 #liebiaob2_3r p{margin-left: 15px;line-height: 24px;font-size: 14px;color: #666;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_3 #liebiaob2_3r a{color: #666;font-size: 14px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_3 #liebiaob2_3r .jia{float: right;margin-top: 15px;margin-right: 25px;}
+
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_4{width: 840px;height: 140px;border-bottom: 1px solid rgb(240,240,240);clear: both;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_4 #liebiaob2_4l{width: 100px;height:100px;border: 1px solid #999999;float: left;margin: 20px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_4 #liebiaob2_4r{width: 600px;height: 100px;float: left;margin-bottom: 20px;padding-top: 15px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_4 #liebiaob2_4r p{margin-left: 15px;line-height: 24px;font-size: 14px;color: #666;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_4 #liebiaob2_4r a{color: #666;font-size: 14px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_4 #liebiaob2_4r .jia{float: right;margin-top: 15px;margin-right: 25px;}
+
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_5{width: 840px;height: 140px;border-bottom: 1px solid rgb(240,240,240);clear: both;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_5 #liebiaob2_5l{width: 100px;height:100px;border: 1px solid #999999;float: left;margin: 20px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_5 #liebiaob2_5r{width: 600px;height: 100px;float: left;margin-bottom: 20px;padding-top: 15px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_5 #liebiaob2_5r p{margin-left: 15px;line-height: 24px;font-size: 14px;color: #666;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_5 #liebiaob2_5r a{color: #666;font-size: 14px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_5 #liebiaob2_5r .jia{float: right;margin-top: 15px;margin-right: 25px;}
+
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_6{width: 840px;height: 140px;border-bottom: 1px solid rgb(240,240,240);clear: both;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_6 #liebiaob2_6l{width: 100px;height:100px;border: 1px solid #999999;float: left;margin: 20px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_6 #liebiaob2_6r{width: 600px;height: 100px;float: left;margin-bottom: 20px;padding-top: 15px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_6 #liebiaob2_6r p{margin-left: 15px;line-height: 24px;font-size: 14px;color: #666;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_6 #liebiaob2_6r a{color: #666;font-size: 14px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_6 #liebiaob2_6r .jia{float: right;margin-top: 15px;margin-right: 25px;}
+
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_7{width: 840px;height: 140px;border-bottom: 1px solid rgb(240,240,240);clear: both;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_7 #liebiaob2_7l{width: 100px;height:100px;border: 1px solid #999999;float: left;margin: 20px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_7 #liebiaob2_7r{width: 600px;height: 100px;float: left;margin-bottom: 20px;padding-top: 15px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_7 #liebiaob2_7r p{margin-left: 15px;line-height: 24px;font-size: 14px;color: #666;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_7 #liebiaob2_7r a{color: #666;font-size: 14px;}
+#Tre #liebiao #liebiaob #liebiaob2 #liebiaob2_7 #liebiaob2_7r .jia{float: right;margin-top: 15px;margin-right: 25px;}
+
+
+
+

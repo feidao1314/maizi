@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>麦子商城首页</title>
+    <link href="maiz.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/jquery-2.2.3.js"></script>
+    <script type="text/javascript">
+        //图片轮播
+        var t= 0,n= 0,count;
+        $(document).ready(function(){
+            li=$("#num li");
+            var dt = document.getElementsByTagName("dt");
+            var timer;
+            function moveDt(){
+                for(var i = 0 ; i < dt.length ; i++){
+                    /*给每个dt标记添加一个属性*/
+                    dt[i].index = i;
+                    dt[i].onmouseover = function(){
+                        clearInterval(timer);
+                        for(var j=0;j<li.length;j++){
+                            dt[j].className = "";
+                            li[j].className = "";
+                        }
+                        this.className = "on";
+                        li[this.index].className = "TopImg";
+                    }
+                    dt[i].onmouseout = function(){
+                        autoMove(this.index);
+                    }
+                }
+            }
+            function autoMove(index){
+                var index = index || 0;
+                timer = setInterval(function(){
+
+                    if(index >= li.length){
+                        index = 0;
+                    }
+                    for(var i = 0 ; i < li.length ; i++){
+                        li[i].className = "";
+                        dt[i].className = "";
+                    }
+                    dt[index].className = "on";
+                    li[index].className = "TopImg";
+                    index++;
+                },1000);
+            }
+            window.onload = function(){
+                moveDt();
+                autoMove();
+            }
+        })
+    </script>
+</head>
+<body>
+<div id="One">
+    <div id="One1">
+        <img src="images/logo.gif">
+    </div>
+    <div id="One2">
+        <div id="orr" style="margin-right: -55px;margin-top: 5px;"></div>
+        <p>您好，欢迎来到麦子商城！继续购物？【<a href="denglu.html">请登录</a> 】新用户?【<a href="zhuce.html">免费注册</a>】</p>
+    </div>
+    <div id="One3">
+        <div id="ort">
+            <div id="orl">
+                <ul>
+                    <li><a href="#">帮助中心 |</a> </li>
+                    <li><a href="#">客户反馈 |</a> </li>
+                    <li><a href="#">网站地图 |</a></li>
+                    <li><a href="#">加入收藏</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div id="orb">
+            <marquee direction="up" height="30px"  scrollamount="2" style="text-indent:40px;">
+                <p><img src="images/notice.gif" > <a href="huodong.html" style="line-height: 25px; color: red; font-size: 14px;">最新公告：明天有秒杀活动最新公告：告：明天有秒杀活动！</a></p>
+                <p><img src="images/notice.gif" > <a href="huodong.html" style="line-height: 25px;color: red; font-size: 14px;">最新公告：明天有秒杀活动！</a></p>
+                <p><img src="images/notice.gif" > <a href="huodong.html" style="line-height: 25px;color: red; font-size: 14px;">最新公告：明有秒杀活天有秒杀活动！</a></p>
+                <p><img src="images/notice.gif" > <a href="huodong.html" style="line-height: 25px;color: red; font-size: 14px;">最新公告：明天有秒杀活有秒杀活有秒杀活有秒杀活动！</a></p>
+            </marquee>
+        </div>
+    </div>
+</div>
+<div id="Two">
+    <div id="twt">
+        <ul>
+            <li><a href="shouye.html">网站首页 |</a> </li>
+            <li><a href="#">分类导航|</a> </li>
+            <li><a href="#">品牌导航|</a> </li>
+            <li><a href="#">购物帮助|</a> </li>
+            <li><a href="liebiao.html">产品列表|</a> </li>
+            <li><a href="baojiadan.html">报价单|</a> </li>
+            <li><a href="xinxi.html">产品信息</a> </li>
+        </ul>
+    </div>
+    <div id="twb">
+        <div id="twbl">
+            <form style="color: white;margin-left: 20px; font-weight: bold; margin-top: 10px;">
+                商品搜素；
+                <select>
+                    <option>所有分类</option>
+                    <option>最新商品</option>
+                    <option>热卖商品</option>
+                </select>
+            </form>
+        </div>
+        <div id="twbc">
+            <input type="text" style="width: 300px;height: 16px;margin-left: 10px;margin-top: 10px;" placeholder="请输入关键词">
+            <input type="button" value="搜索"style="font-size: 16px;margin-top: 5px;margin-left: 10px;width: 50px;text-align: center;">
+            <a href="#">高级/组合搜索</a>
+        </div>
+        <div id="twbr">
+            <img src="images/d3.jpg" style="margin-right: 30px;margin-top: 10px;">
+            <a href="gouwuche.html" style="position: absolute;left: 30px;top: 15px; font-size: 12px;color: black;">购物车暂时为空</a>
+            <a href="jiesuan.html" style="position: absolute;left: 180px;top: 15px; font-size: 12px;color: black;">去结算</a>
+            <a href="denglu.html"style="position: absolute;left: 250px;top: 15px; font-size: 12px;color: black;">用户中心</a>
+        </div>
+    </div>
+
+</div>
+<div id="Tre">
+    <div id="TreL">
+        <div id="TreL1">
+            <div id="TreL1t">
+                <h3>用户信息</h3>
+            </div>
+            <div id="TreL1b">
+                <p style="padding-top: 10px;"><img src="images/user/1.gif"><a href="zhuce.html">注册</a>/<a href="denglu.html">登录</a></p>
+                <p><img src="images/user/8.gif"><a href="gouwuche.html">购物车（0）</a></p>
+                <p style="margin-bottom: 20px;"><img src="images/user/10.gif"><a href="#">对比框（0）</a></p>
+            </div>
+        </div>
+        <div id="TreL2">
+            <div id="TreL2t">
+                <h3>商品分类</h3>
+            </div>
+            <div id="TreL2b">
+                <ul>
+                    <li>
+                        <img src="images/dot3.gif"><span>家用电器</span>
+                        <ul>
+                            <li><a href="#" style="margin-left: 40px;">冰箱</a>|<a href="#">洗衣机</a></li>
+                            <li><a href="#" style="margin-left: 40px;">汽车用品</a>|<a href="#">个人护理</a> </li>
+                            <li><a href="#" style="margin-left: 40px;">生活电器</a>|<a href="#">其他家电</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="images/dot3.gif"><span>手机数码</span>
+                        <ul>
+                            <li><a href="#" style="margin-left: 40px;">数码相机</a>|<a href="#">手机通讯</a></li>
+                            <li><a href="#" style="margin-left: 40px;">时尚影音</a>|<a href="#">数码配件</a> </li>
+                            <li><a href="#" style="margin-left: 40px;">数码影像</a>|<a href="#">手机配件</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="images/dot3.gif"><span>电脑产品</span>
+                        <ul>
+                            <ul>
+                                <li><a href="#" style="margin-left: 40px;">笔记本</a>|<a href="#">办公耗材</a></li>
+                                <li><a href="#" style="margin-left: 40px;">电脑软件</a>|<a href="#">网络产品</a> </li>
+                                <li><a href="#" style="margin-left: 40px;">办公设备</a>|<a href="#">电脑整机</a> </li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="images/dot3.gif"><span>日用百货</span>
+                        <ul>
+                            <li><a href="#" style="margin-left: 40px;">玩具乐器</a>|<a href="#">个肤化妆</a></li>
+                            <li><a href="#" style="margin-left: 40px;">礼品箱包</a>|<a href="#">钟表首饰</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="images/dot3.gif"><span>服装鞋帽</span>
+                        <ul>
+                            <li><a href="#" style="margin-left: 40px;">运动鞋</a>|<a href="#">女士服装</a></li>
+                            <li><a href="#" style="margin-left: 40px;">男士服装</a>|<a href="#">休闲鞋</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="images/dot3.gif" ><span>运动健康</span>
+                        <ul>
+                            <li><a href="#" style="margin-left: 40px;">户外运动</a>|<a href="#">运动器材</a> </li>
+                            <li><a href="#" style="margin-left: 40px;">养生器械</a>|<a href="#">健康食品</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><a href="#">所有分类 >></a> </p>
+            </div>
+        </div>
+        <div id="TreL3">
+            <div id="TreL3t">
+                <img src="images/Wrzcnet/left_01.gif" width="211px" style="margin: 5px auto;">
+            </div>
+            <div id="TreL3c">
+                <div id="TreL3ct">
+                    <h3>推荐品牌</h3>
+                </div>
+                <div id="TreL3cb">
+                    <img src="imgs/1-1.jpg" style="margin-left: 10px; margin-top: 10px;">
+                    <img src="imgs/2-1.jpg">
+                    <img src="imgs/3-1.jpg" style="margin-left: 10px;">
+                    <img src="imgs/4-1.jpg">
+                    <img src="imgs/5-1.jpg" style="margin-left: 10px;">
+                    <img src="imgs/2-1.jpg">
+                    <p><a href="#">所有品牌 >></a> </p>
+                </div>
+            </div>
+            <div id="TreL3b">
+                <img src="images/Wrzcnet/left_01.gif" width="211px" style="margin: 5px auto;">
+            </div>
+            <div id="TreL3f">
+                <div id="TreL3ft">
+                    <h3>合作伙伴</h3>
+                </div>
+                <div id="TreL3fb">
+                    <p><a href="#">网软志成人才</a></p>
+                    <p><a href="#">网软志成商城</a></p>
+                    <p style="margin-bottom: 20px;"><a href="#">麦子学院</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="TreC">
+        <div id="TreC1">
+            <ul class="num" id="num">
+                <li class="TopImg"><a href="#"><img src="images/Wrzcnet/1.jpg"/></a> </li>
+                <li><a href="#"><img src="images/Wrzcnet/2.jpg"/></a></li>
+                <li><a href="#"><img src="images/Wrzcnet/3.jpg"/></a></li>
+                <li><a href="#"><img src="images/Wrzcnet/4.jpg"/></a></li>
+                <li><a href="#"><img src="images/Wrzcnet/5.jpg"/></a></li>
+                <li><a href="#"><img src="images/Wrzcnet/6.jpg"/></a></li>
+                <li><a href="#"><img src="images/Wrzcnet/7.jpg"/></a></li>
+                <li><a href="#"><img src="images/Wrzcnet/8.jpg"/></a></li>
+            </ul>
+            <dl class="mmm">
+                <dt class="on">1</dt>
+                <dt>2</dt>
+                <dt>3</dt>
+                <dt>4</dt>
+                <dt>5</dt>
+                <dt>6</dt>
+                <dt>7</dt>
+                <dt>8</dt>
+            </dl>
+        </div>
+        <div id="TreC2">
+            <div id="TreC2t" class="TreCt">
+                <h4>热卖商品</h4>
+                <a href="#">MORE ▶</a>
+            </div>
+            <div id="TreC2b" class="TreCb">
+                <ul>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27101817.jpg"></a>
+                        <p><a href="#">爱普生（Epson）EPL-N2500 A3黑白</a></p>
+                        <h4>¥ 7599.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27101817.jpg"></a>
+                        <p><a href="#">爱普生（Epson）EPL-N2500 A3黑白</a></p>
+                        <h4>¥ 7599.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27101817.jpg"></a>
+                        <p><a href="#">爱普生（Epson）EPL-N2500 A3黑白</a></p>
+                        <h4>¥ 7599.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27101817.jpg"></a>
+                        <p><a href="#">爱普生（Epson）EPL-N2500 A3黑白</a></p>
+                        <h4>¥ 7599.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27101817.jpg"></a>
+                        <p><a href="#">爱普生（Epson）EPL-N2500 A3黑白</a></p>
+                        <h4>¥ 7599.00元</h4>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27105125.jpg"></a>
+                        <p><a href="#">霍尼韦尔（Honeywell）</a></p>
+                        <h4>¥ 1298.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27105125.jpg"></a>
+                        <p><a href="#">霍尼韦尔（Honeywell）</a></p>
+                        <h4>¥ 1298.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27105125.jpg"></a>
+                        <p><a href="#">霍尼韦尔（Honeywell）</a></p>
+                        <h4>¥ 1298.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27105125.jpg"></a>
+                        <p><a href="#">霍尼韦尔（Honeywell）</a></p>
+                        <h4>¥ 1298.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27105125.jpg"></a>
+                        <p><a href="#">霍尼韦尔（Honeywell）</a></p>
+                        <h4>¥ 1298.00元</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="TreC3">
+            <div id="TreC3t" class="TreCt">
+                <h4>推荐商品</h4>
+                <a href="#">MORE ▶</a>
+            </div>
+            <div id="TreC3b" class="TreCb">
+                <ul>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                        <p><a href="#">戴尔（Dell) I560SR-128商用</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                        <p><a href="#">戴尔（Dell) I560SR-128商用</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                        <p><a href="#">戴尔（Dell) I560SR-128商用</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                        <p><a href="#">戴尔（Dell) I560SR-128商用</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                        <p><a href="#">戴尔（Dell) I560SR-128商用</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27101026.jpg"></a>
+                        <p><a href="#">美的（Midea)电脑版电压力锅PCS507</a></p>
+                        <h4>¥ 389.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27101026.jpg"></a>
+                        <p><a href="#">美的（Midea)电脑版电压力锅PCS507</a></p>
+                        <h4>¥ 389.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27101026.jpg"></a>
+                        <p><a href="#">美的（Midea)电脑版电压力锅PCS507</a></p>
+                        <h4>¥ 389.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27101026.jpg"></a>
+                        <p><a href="#">美的（Midea)电脑版电压力锅PCS507</a></p>
+                        <h4>¥ 389.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27101026.jpg"></a>
+                        <p><a href="#">美的（Midea)电脑版电压力锅PCS507</a></p>
+                        <h4>¥ 389.00元</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="TreC4">
+            <div id="TreC4t" class="TreCt">
+                <h4>特价商品</h4>
+                <a href="#">MORE ▶</a>
+            </div>
+            <div id="TreC4b" class="TreCb">
+                <ul>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                        <p><a href="#">戴尔（Dell) I560SR-128商用</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                        <p><a href="#">戴尔（Dell) I560SR-128商用</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                        <p><a href="#">戴尔（Dell) I560SR-128商用</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                        <p><a href="#">戴尔（Dell) I560SR-128商用</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                        <p><a href="#">戴尔（Dell) I560SR-128商用</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-top: 10px;"><a href="#"><img src="imgs/pic/11.jpg"> </a> </div>
+        </div>
+        <div id="TreC5">
+            <div id="TreC5t" class="TreCt">
+                <h4>最新商品</h4>
+                <a href="#">MORE ▶</a>
+            </div>
+            <div id="TreC5b" class="TreCb">
+                <ul>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                        <p><a href="#">戴尔（Dell) I560SR-128商用</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27101817.jpg"></a>
+                        <p><a href="#">爱普生（Epson）EPL-N2500 A3黑白</a></p>
+                        <h4>¥ 7599.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27105125.jpg"></a>
+                        <p><a href="#">霍尼韦尔（Honeywell）</a></p>
+                        <h4>¥ 1298.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27101026.jpg"></a>
+                        <p><a href="#">美的（Midea)电脑版电压力锅PCS507</a></p>
+                        <h4>¥ 389.00元</h4>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                        <p><a href="#">戴尔（Dell) I560SR-128商用</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="TreC6">
+            <p>本站支持以下付款方式：</p>
+            <a href="#"><img src="images/pay/logo_alipay.gif"  style="margin-left: 40px;"></a>
+            <a href="#"><img src="images/pay/logo_ebank.gif" ></a>
+            <a href="#"><img src="images/pay/paypal_buy.gif "></a>
+            <a href="#"><img src="images/pay/99bill.jpg" ></a>
+            <a href="#"><img src="images/pay/logo_paypal.gif"  style="margin-left: 40px;"></a>
+            <a href="#"><img src="images/pay/paypal_buy.gif "></a>
+            <a href="#"><img src="images/pay/99bill.jpg" ></a>
+            <a href="#"><img src="images/pay/logo_paypal.gif" ></a>
+        </div>
+    </div>
+    <div id="TreR">
+        <div id="TreR1">
+            <div id="TreR1t">
+                <h3>网站新闻</h3>
+            </div>
+            <div id="TreR1b">
+                <ul>
+                    <li><img src="images/dot3.gif"> <a href="#">京东商城网站模板英文版</a> </li>
+                    <li><img src="images/dot3.gif"> <a href="#">京东商城系统英文版</a> </li>
+                    <li><img src="images/dot3.gif"> <a href="#">B2B商城系统</a> </li>
+                    <li><img src="images/dot3.gif"> <a href="#">京东商城系统功能</a> </li>
+                    <li><img src="images/dot3.gif"> <a href="#">shop商城系统</a> </li>
+                    <li><img src="images/dot3.gif"> <a href="#">独立商城系统</a> </li>
+                    <li><img src="images/dot3.gif"> <a href="#">网购商城系统</a> </li>
+                    <li style="margin-bottom: 20px;"><img src="images/dot3.gif"> <a href="#">php商城系统</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div id="TreR2">
+            <div id="TreR2t">
+                <h3>客户服务</h3>
+            </div>
+            <div id="TreR2b">
+                <p>电话：020-34506590</p>
+                <p>邮箱：webmaster@wrzc.net</p>
+                <p>传真：020-34506590</p>
+                <div id="TreR2bf">
+                    <a href="#"><img src="images/QQonline_01.gif"> 售前客服</a>
+                    <a href="#"><img src="images/QQonline_01.gif">售后客服</a>
+                    <a href="#"><img src="images/ww.gif">十佳掌柜</a>
+                    <a href="#"><img src="images/ww.gif">网软志成</a>
+                    <a href="#"><img src="images/msn.gif">MSN客服一</a>
+                    <a href="#"><img src="images/msn.gif">MSN客服二</a>
+                    <a href="#"><img src="images/skype.gif">网软志成</a>
+                </div>
+            </div>
+        </div>
+        <div id="TreR3" style="margin-top: 5px;">
+            <div id="TreR3t">
+                <h3>分类推荐商品</h3>
+            </div>
+            <div id="TreR3b">
+                <div class="TreR31">
+                   <div class="TreR3l">
+                       <a href="#"><img src="imgs/pic/27105125.jpg"></a>
+                   </div>
+                    <div class="TreR3r" >
+                        <p><a href="#">霍尼韦尔（Honeywell）电水壶 全智能自动烧水（2L）</a></p>
+                        <h4>¥ 1298.00元</h4>
+                    </div>
+                </div>
+                <div class="TreR31">
+                    <div class="TreR3l">
+                        <a href="#"><img src="imgs/pic/27101817.jpg"></a>
+                    </div>
+                    <div class="TreR3r" >
+                        <p><a href="#">爱普生（Epson）EPL-N2500 A3黑白激光打印机（功率：0.02kw/h ）</a></p>
+                        <h4>¥ 7599.00元</h4>
+                    </div>
+                </div>
+                <div class="TreR31">
+                    <div class="TreR3l" >
+                        <a href="#"><img src="imgs/pic/27101026.jpg"></a>
+                    </div>
+                    <div class="TreR3r" >
+                        <p><a href="#">美的（Midea)电脑版电压力锅PCS507 智能全自动（8L）功率：0.47kw/h</a></p>
+                        <h4>¥ 389.00元</h4>
+                    </div>
+                </div>
+                <div class="TreR31">
+                    <div class="TreR3l" >
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                    </div>
+                    <div class="TreR3r" >
+                        <p><a href="#">戴尔（Dell) I560SR-128商用台式电脑（双核 E5400 2G内存 ）</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </div>
+                </div>
+                <div class="TreR31">
+                    <div class="TreR3l" id="TreR3l">
+                        <a href="#"><img src="imgs/pic/27102559.jpg"></a>
+                    </div>
+                    <div class="TreR3r">
+                        <p><a href="#">戴尔（Dell) I560SR-128商用台式电脑（双核 E5400 2G内存 ）</a></p>
+                        <h4>¥ 3999.00元</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="TreR4">
+                <a href="#" ><img src="images/Wrzcnet/right_01.jpg"style="width: 211px;height: 130px; margin-top: 5px;"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="For">
+    <div id="For1" class="For">
+        <p>关于我们</p>
+        <ul>
+            <li><img src="images/dot3.gif"><a href="#">发展历程 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">联系方式 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">>公司介绍 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">企业文化 </a></li>
+        </ul>
+    </div>
+    <div id="For2" class="For">
+        <p>付款方式</p>
+        <ul>
+            <li><img src="images/dot3.gif"><a href="#">银行汇款 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">在线支付 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">公司转账 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">个人转账 </a></li>
+        </ul>
+    </div>
+    <div id="For3" class="For">
+        <p>送货方式</p>
+        <ul>
+            <li><img src="images/dot3.gif"><a href="#">上门自提 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">EMS快递 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">快递发货 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">平邮发货 </a></li>
+        </ul>
+
+    </div>
+    <div id="For4" class="For">
+        <p>售后服务</p>
+        <ul>
+            <li><img src="images/dot3.gif"><a href="#">质保承诺 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">退换货政策 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">价格保护 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">返修申请 </a></li>
+        </ul>
+    </div>
+    <div id="For5" class="For">
+        <p>购物帮助</p>
+        <ul>
+            <li><img src="images/dot3.gif"><a href="#">用户等级 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">积分获得与使用 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">购物流程 </a></li>
+            <li><img src="images/dot3.gif"><a href="#">常见问题 </a></li>
+        </ul>
+    </div>
+</div>
+<div id="Fiv">
+    <p>CopyRight2016.5 All Right Reserved. 版权所有:广州网软志成信息科技有限公司</p>
+    <p>客服热线：028-66096462, 售后服务：028-12345678</p>
+    <p>客服邮箱:webmaster@wrzc,net 粤ICP备06122404号 管理进入</p>
+</div>
+</body>
+<script type="text/javascript">
+    var date=new Date();
+    var year=date.getFullYear();
+    var mou=date.getMonth()+1;
+    var day=date.getDate();
+    var week=new Array(7);
+    week[0]="星期天";week[1]="星期一";week[2]="星期二";week[3]="星期三";week[4]="星期四";week[5]="星期五";week[6]="星期六";
+    var orr=document.getElementById("orr");
+    orr.innerHTML=year+"/"+mou+"/"+day+week[date.getUTCDay()];
+</script>
+</html>
+
